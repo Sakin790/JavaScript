@@ -1,1 +1,3 @@
-console.log('This Is a Github VS code')
+const myFun =  function() {
+    console.log('GitHub VS CODE');
+}
