@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>remove</title>
+  </head>
+  <body>
+    <h1>Deleting img onClick</h1>
+    <div class="images">
+      <li>
+        <img src="baby.png" alt="" />
+      </li>
+    </div>
+  </body>
+  <script>
+    document.querySelector(".images").addEventListener("click", function (e) {
+      if (e.target.tagName === "IMG") { //tagName img holei remove korbo
+        e.target.parentNode.remove(); // parent node delete korbe
+      }
+      console.log(e.target.tagName); 
+      console.log(e.target.parentNode); // Eta korle img er node asbe
+    });
+  </script>
+</html>
