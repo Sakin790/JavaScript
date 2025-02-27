@@ -1,27 +1,16 @@
-let arry=[1,2,3,4,5,6,7,8,9,10];
-let sum=0;
-arry.forEach((element) => {
-    sum+=element;
-})
+function insertLast(arr = [], value = "") {
+  let newArray = [];
 
-console.log("sum",sum);
+  // Copy elements from arr to newArray using a loop
+  for (let i = 0; i < arr.length; i++) {
+    newArray[i] = arr[i];
+  }
 
-let arry1=[1,2,3,4,5,6,7,8,9,10];
-let sum1=0;
+  // Insert the new value at the last index
+  newArray[arr.length] = value;
 
-
-
-for (let i =0,len=arry1.length;i<len;i++) {
-    sum1+=arry1[i];
+  return newArray;
 }
-console.log("sum1",sum1);
 
-
-let arry3=[10,20,30,40,50,60,70,80,90,100];
-let sum3=0;
-
-
-for(let num of arry3){
-    sum3+=num;
-}
-console.log("sum3",sum3);
+let result = insertLast(["one", "two"], "three");
+console.log(result[2]); // Output: "three"

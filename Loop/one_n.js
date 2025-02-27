@@ -24,16 +24,15 @@ function sumOfNaturalNumber(n) {
   return restlt;
 }
 
-function reverseOfnumber(n) {
-  let reverse;
-  if (n.length == 1) {
-    return n;
+function reverseOfNumber(n) {
+  let reverse = "";
+  for (let i = n.length - 1; i >= 0; i--) {
+    reverse += n[i];
   }
-  for (let i = 0; i < n.length; i++) {}
+  return reverse;
 }
 
 let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
 let sum = 0;
 for (let i = 0; i < myArray.length; i++) {
   sum += myArray[i];
