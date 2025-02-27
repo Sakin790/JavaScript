@@ -15,4 +15,27 @@ function odd() {
     console.log(i);
   }
 }
-odd();
+
+function sumOfNaturalNumber(n) {
+  let restlt = 0;
+  for (i = 1; i <= n; i++) {
+    restlt += i;
+  }
+  return restlt;
+}
+
+function reverseOfnumber(n) {
+  let reverse;
+  if (n.length == 1) {
+    return n;
+  }
+  for (let i = 0; i < n.length; i++) {}
+}
+
+let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+let sum = 0;
+for (let i = 0; i < myArray.length; i++) {
+  sum += myArray[i];
+}
+console.log(sum);
