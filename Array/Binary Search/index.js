@@ -1,13 +1,19 @@
-function LinearSearch(arr, terget) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] == terget) {
-      return i;
+function binarySearch(nums = [], terget) {
+  let start = 0;
+  let end = nums.length - 1;
+
+  while (start <= end) {
+    let mid = Math.floor((start + end) / 2);
+    if (nums[mid] === terget) {
+      return mid;
+    }
+    if (nums[mid] < terget) {
+      start = mid + 1;
+    } else {
+      end = mid - 1;
     }
   }
-  return -1;
 }
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-let terget = 5;
-
-console.log(LinearSearch(arr, terget));
+let result = binarySearch([0, 3, 4, 7, 9, 12], 7);
+console.log(result);
