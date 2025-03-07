@@ -1,9 +1,9 @@
-let arr = new Array(2);
-
-let score = [12, 43, 54, 13];
-
-let i = 0;
-while (i < score.length) {
-  console.log(score[i]);
-  i++;
+function twoSum(arr, target) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length - 1; j++) {
+      if (arr[i] + arr[j + 1] == target) {
+        return [arr[i], arr[j + 1]];
+      }
+    }
+  }
 }

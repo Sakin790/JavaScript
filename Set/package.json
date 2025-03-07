@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "set.js",
   "scripts": {
-   "start": "node --watch set.js"
+   "start": "node --watch index.js"
   },
   "keywords": [],
   "author": "",
