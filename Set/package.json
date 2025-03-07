@@ -1,0 +1,12 @@
+{
+  "name": "set",
+  "version": "1.0.0",
+  "main": "set.js",
+  "scripts": {
+   "start": "node --watch set.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
