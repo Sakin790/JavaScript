@@ -1,10 +1,6 @@
-function findIndex(arr, target) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] == target) {
-      return i;
-    }
+function smallest(nums = []) {
+  if (nums.length === 1) {
+    return nums, "it a smallest number";
   }
-  return -1;
 }
-
-console.log(findIndex([10, 20, 30], 20));
+console.log(smallest([10]));
