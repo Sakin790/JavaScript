@@ -1,10 +1,10 @@
-function reverseString(str) {
-  let reversed = "";
-
-  for (let i = str.length - 1; i >= 0; i--) {
-    reversed += str[i];
-  }
-  return reversed;
-}
-const opt = reverseString("hello");
-console.log(opt);
+var capitalizeTitle = function (title) {
+  return title
+    .split(" ")
+    .map((word) =>
+      word.length <= 2
+        ? word.toLowerCase()
+        : word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+    )
+    .join(" ");
+};
