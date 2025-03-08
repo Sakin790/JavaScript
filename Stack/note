@@ -1,0 +1,2 @@
+push : This method adds an element to the top of the stack.
+Pop : Remove Top element
