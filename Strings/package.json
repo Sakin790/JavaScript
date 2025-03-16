@@ -1,0 +1,12 @@
+{
+  "name": "strings",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+   "s":"node --watch index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
