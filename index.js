@@ -1,5 +1,5 @@
-var myAtoi = function (s) {
-  return s.split(" ").sort((a, b) => a.match(/\d+/) - b.match(/\d+/));
+var findDuplicates = function (nums) {
+  const seen = new Set();
+  return nums.filter((value) => (seen.has(value) ? true : seen.add(value)));
 };
-
-console.log(myAtoi("1337c0d3")); // "a b
+console.log(findDuplicates([4, 3, 2, 7, 8, 2, 3, 1]));
