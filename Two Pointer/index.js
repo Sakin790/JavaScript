@@ -1,13 +1,11 @@
-function twoPointer(arr) {
+var reverseStr = function (s, k) {
   let left = 0;
-  let right = arr.length - 1;
+  let right = s.length - 1;
 
   while (left < right) {
-    [arr[left], arr[right]] = [arr[right], arr[left]];
     left++;
     right--;
   }
-  return arr;
-}
-
-let array = [12, 43, 43, 2, 5, 23];
+};
+(s = "abcdefg"), (k = 2);
+r = "bacdfeg";
