@@ -1,7 +1,4 @@
-/**
- * @param {string} s
- * @return {boolean}
- */
+
 var areOccurrencesEqual = function (s) {
   let uniqueChars = [...new Set(s)];
   let hashMap = {};
