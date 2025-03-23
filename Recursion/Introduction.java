@@ -1,4 +1,4 @@
-public class Recursion {
+public class Introduction {
 
     public static void message() {
         System.out.println("Im mesagae");
