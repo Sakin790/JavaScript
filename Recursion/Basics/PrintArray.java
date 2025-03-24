@@ -1,3 +1,4 @@
+package Basics;
 public class PrintArray {
     public static void printarr(int[] arr, int index) {
 

@@ -1,3 +1,4 @@
+package Basics;
 public class NtoOne {
     public static void func(int n) {
 
