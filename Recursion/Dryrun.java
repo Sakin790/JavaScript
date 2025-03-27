@@ -1,15 +1,12 @@
 public class Dryrun {
-    static int printN(int n) {
-        if (n == 10) {
-            return 0;
-        }
 
-        System.out.println(n);
-        return printN(n + 1);
+    static boolean isSort(int[] nums) {
 
-    }
+        int count = 0;
+        for (int i = 0; i < nums.length; i++)
+            if (nums[i] > nums[(i + 1) % nums.length] && ++count > 1)
+                return false;
+        return count <= 1;
 
-    public static void main(String[] args) {
-        printN(1);
     }
 }
