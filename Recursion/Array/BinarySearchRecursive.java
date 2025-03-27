@@ -1,6 +1,6 @@
 package Array;
 
-public class BinarySearch {
+public class BinarySearchRecursive {
     public static int BS(int[] arr, int target, int start, int end) {
         if (start > end) {
             return -1; 
